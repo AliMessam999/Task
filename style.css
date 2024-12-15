@@ -579,8 +579,22 @@ Waves */
 /* -------------------------------------------------------------------------- */
 /* Services */
 
-.services
-{
+/* Services Section Styling */
+.services {
     background: #7E8892;
     padding: 80px;
+}
+.services .container .row .col-md-3 h3
+{
+    cursor: pointer;
+    color: white;
+}
+.services .container .row .col-md-3 p
+{
+    color: white;
+}
+.services .container .row .col-md-3 h3:hover
+{
+    cursor: pointer;
+    color: #FF6601;
 }
