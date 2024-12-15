@@ -1,0 +1,585 @@
+/* Section */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #181828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2
+{
+    color: transparent;
+    font-weight: 900;
+    font-size: 14rem;
+    font-family: Roboto;
+    -webkit-text-stroke: 2px #fff;
+}
+section .star
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: animate 8s ease-in-out infinite,
+                backgroundmove 16s linear infinite;
+}
+section .star.star1
+{
+    animation-delay: 0s;
+    background: url(star1.png);
+}
+section .star.star2
+{
+    animation-delay: -1s;
+    background: url(star2.png);
+}
+section .star.star3
+{
+    animation-delay: -2s;
+    background: url(star3.png);
+}
+section .star.star4
+{
+    animation-delay: -3s;
+    background: url(star4.png);
+}
+section .star.star5
+{
+    animation-delay: -4s;
+    background: url(star5.png);
+}
+section .star.star6
+{
+    animation-delay: -5s;
+    background: url(star6.png);
+}
+section .star.star7
+{
+    animation-delay: -6s;
+    background: url(star7.png);
+}
+section .star.star8
+{
+    animation-delay: -7s;
+    background: url(star8.png);
+}
+@keyframes animate
+{
+    0%, 20%, 40%, 60%, 80%, 100%
+    {
+        opacity: 0;
+    }
+    10%, 30%, 50%, 70%, 90%
+    {
+        opacity: 1;
+    }
+}
+@keyframes backgroundmove
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(2);
+    }
+}
+
+
+/* ------------------------------------------------------------- */
+/* About Section */
+*
+{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+.about
+{
+    background: #F4F6F7;
+    height: 30px;
+    line-height: 30px;
+}
+.about a
+{
+    color: #5F727F;
+    text-decoration: none;
+}
+.about a:hover
+{
+    color: #00BCD4;
+}
+a#fb:hover
+{
+    color: #5F727F;
+}
+a#li:hover
+{
+    color: #00BCD4;
+}
+a#twitter:hover
+{
+    color: lightgray;
+}
+a#youtube:hover
+{
+    color: red;
+}
+.row
+{
+    font-size: 12px;
+    color: #5F727F;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+/* header Section */
+.header {
+    height: 60px;
+    background: #000;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header .logo {
+    display: inline;
+    margin-right: 30px;
+}
+
+.header .logo img {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.header .navs {
+    display: inline;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.header a:hover {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+#anniButton {
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* White background for the dropdown */
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow around the dropdown */
+    border-radius: 5px; /* Optional: adds rounded corners to the dropdown */
+    opacity: 0; /* Start with 0 opacity */
+    visibility: hidden; /* Initially hidden */
+    transform: translateY(-10px); /* Start slightly above the dropdown position */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* Transition for opacity and transform */
+}
+
+/* Dropdown links inside the dropdown content */
+.dropdown-content a {
+    color: #333; /* Dark text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd; /* Border bottom after each option */
+}
+
+/* Remove border after the last item */
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* Show the dropdown content on hover, with animation */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Fade in */
+    visibility: visible; /* Make the dropdown visible */
+    transform: translateY(0); /* Move to its final position */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for the fade-in and sliding effect */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    color: #00bcd4; /* Change color on hover */
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* About-Eziline */
+.about-eziline
+{
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #542F50, #8B5B6E, #9A4F68, #662D4B);
+
+    padding-top: 190px;
+    color: white;
+    position: relative;
+}
+.about-eziline h3
+{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+/* Feature List */
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-100%); /* Start off to the left */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for both opacity and transform */
+}
+
+/* When the item becomes visible in the viewport */
+.feature-item.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to its original position */
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 16px;
+    color: #F44336;
+    padding-top: 6px;
+    margin: 0;
+}
+
+/* Feature Text Styles */
+.feature-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Common flexbox properties for both left and right animations */
+.feature-item, .c1 {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    justify-content: flex-start;  /* Align items to the left */
+    gap: 10px;  /* Space between the icon and text */
+}
+
+/* Reset any margin/padding for both the icon and the text */
+.feature-item i, .c1 i {
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove any padding */
+}
+
+.feature-item p, .c1 p {
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove padding */
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* ZigZagLine */
+.zigZagLine
+{}
+
+/* ------------------------------------------------------------------ */
+/* Footer Section */
+.footer {
+    background: #181828; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom spacing */
+    font-size: 18px; /* Font size */
+    border-top: 1px solid white; /* Border for a clean separation */
+    margin-bottom: 0; /* Prevent extra margin */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+    justify-content: space-between; /* Space between groups */
+    align-items: center; /* Align items vertically */
+    text-align: center; /* Center text when stacked */
+}
+
+.footer .container p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.footer .container .offerings {
+    display: flex;
+    flex-wrap: wrap; /* Adjust items to wrap if necessary */
+    gap: 10px; /* Spacing between items */
+    justify-content: center; /* Center the offerings in their section */
+    align-items: center;
+    margin: 10px 0; /* Add spacing for visual balance */
+}
+
+.footer .container .links {
+    display: flex;
+    gap: 15px; /* Space between social links */
+    justify-content: center; /* Center links horizontally */
+    align-items: center;
+    margin-top: 10px; /* Add spacing */
+}
+
+.footer a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.footer a:hover {
+    color: #f39c12; /* Change link color on hover */
+}
+
+.line {
+    display: inline-block; /* Make it inline */
+    color: rgba(255, 255, 255, 0.5); /* Lighter line color */
+    margin: 0 5px; /* Add spacing */
+}
+
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    .footer .container .offerings, 
+    .footer .container .links {
+        justify-content: center; /* Center align all elements */
+        margin: 10px 0; /* Add spacing between stacked items */
+    }
+
+    .footer {
+        text-align: center; /* Ensure text is centered for narrow screens */
+    }
+}
+
+
+
+/* ------------------------------------------------------------------ */
+/* About-Us Section */
+.About-Us
+{
+    background: #212331;
+    padding: 100px 60px;
+}
+.About-Us h2
+{
+    color: white;
+}
+.About-Us p
+{
+    font-size: 16px;
+    color: #5f727f;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Source Sans Pro';
+}
+.About-Us .row .pseb img
+{
+    width: 100px;
+}
+.About-Us .row .nadra img
+{
+    width: 200px;
+}
+.About-Us .row .pasha h1
+{
+    padding-top: 30px;
+    color: white;
+}
+.About-Us .row .gcr img
+{
+    width: 200px;
+}
+.About-Us .row .hpg img
+{
+    margin: 30px 30px;
+    color: white;
+    width: 100px;
+}
+.About-Us .p1
+{
+    width: 70px;
+    clip-path: circle(50%);
+}
+.description p
+{
+    font-size: 12px;
+}
+.description .lp
+{
+    color: #00BCD4;
+}
+.boxes
+{
+    border-bottom: 1px solid rgb(70, 67, 67);
+    padding-bottom: 10px;
+    
+}
+h6
+{
+    color: white;
+    display: inline;
+    font-size: 12px;
+}
+.contactP
+{
+    display: inline;
+    font-size: 5px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Our-Clients */
+.our-clients
+{
+
+}
+.our-clients #ourClients
+{
+    color: #FF6600;
+}
+
+
+
+/* ---------------------------------------------------------------------
+Waves */
+
+.curved-section {
+    height: 300px;
+    background: linear-gradient(to right,#662D4B, #9A4F68,#8B5B6E,  #542F50);
+    clip-path: path("M0,100 C150,200 300,0 450,100 C600,200 750,0 900,100 C1050,200 1200,0 1350,100 L1500,300 L0,300 Z");
+    transform: rotate(180deg); /* Rotate 180 degrees */
+}
+
+
+/* ---------------------------------------------------------------- */
+/* project-managent-section */
+
+.project-managent-section h3
+{
+    color: black; 
+    font-size: 28px;
+    font-style: normal; 
+    font-weight: 700; 
+    font-family: 'Montserrat';
+    
+}
+.project-managent-section h3 p
+{
+    width: 60px;
+    margin-top: 20px;
+    border-bottom: 2px solid skyblue;
+}
+
+
+/* Styling for the items in the second group */
+/* Initially, elements are off-screen to the right */
+.c1 {
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for both opacity and transform */
+}
+
+/* When the item becomes visible in the viewport */
+.c1.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to its original position */
+}
+
+
+/* Icon Styling */
+.c1 i {
+    font-size: 16px;
+    color: #F44336;
+    padding-top: -6px;
+    /* margin: 0; */
+}
+
+/* Text Styling */
+.c1-text {
+    color: black;
+    font-size: 20px;
+}
+/* Ensure that the parent container uses flexbox correctly */
+.c1 {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 10px; /* Space between icon and text */
+}
+
+/* Optional: Reset the margin/padding of the icon and text to avoid spacing issues */
+.c1 i {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any padding if present */
+}
+
+.c1 p {
+    margin: 0; /* Remove default margin from text */
+    padding: 0; /* Remove padding */
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Services */
+
+.services
+{
+    background: #7E8892;
+    padding: 80px;
+}
